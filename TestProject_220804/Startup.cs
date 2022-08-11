@@ -32,9 +32,10 @@ namespace TestProject_220804
         {
             services.AddMvc();
             services.Configure<appsettings>(Configuration);
-            services.AddSingleton<Claim>();
+            services.AddSingleton<ClaimAccessor>();
             services.Configure<setting>(Configuration);
             services.AddSingleton<ClaimSetting>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

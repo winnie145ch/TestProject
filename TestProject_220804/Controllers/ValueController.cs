@@ -13,9 +13,9 @@ namespace TestProject_220804.Controllers
     [Route("api/value")]
     public class ValueController : Controller
     {
-        private Claim _claim;
+        private ClaimAccessor _claim;
         private ClaimSetting _claimsetting;
-        public ValueController(Claim claim, ClaimSetting claimsetting) {
+        public ValueController(ClaimAccessor claim, ClaimSetting claimsetting) {
             _claim = claim;
             _claimsetting = claimsetting;
         }
@@ -43,7 +43,40 @@ namespace TestProject_220804.Controllers
                 throw;
             }
         }
-        
+
+
+        public IHeaderDictionary _Headers => _claim._accessor?.HttpContext?.Request?.Headers;
+        [Route("request")]
+        [HttpGet]
+        public IActionResult Header() {
+            try
+            {
+                return Ok(_Headers);
+            }
+            catch {
+                throw;
+            }
+        }
+
+        public string RemoteIp => _claim._accessor?.HttpContext?.Connection.RemoteIpAddress.ToString();
+        [Route("request/ip")]
+        [HttpGet]
+        public IActionResult Ip() {
+            try
+            {
+#if DEBUG
+        var word = " ; Meow ᓚᘏᗢ";
+#else
+        var word = " ; Woff UʘᴥʘU";
+#endif
+                return Ok(RemoteIp + word);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
 
         //程式範例
         /*[HttpGet("{id}", Name = "Get")]

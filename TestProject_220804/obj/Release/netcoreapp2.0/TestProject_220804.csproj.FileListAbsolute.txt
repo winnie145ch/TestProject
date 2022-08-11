@@ -1,0 +1,14 @@
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Release\netcoreapp2.0\TestProject_220804.deps.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Release\netcoreapp2.0\TestProject_220804.runtimeconfig.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Release\netcoreapp2.0\TestProject_220804.runtimeconfig.dev.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Release\netcoreapp2.0\TestProject_220804.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Release\netcoreapp2.0\TestProject_220804.pdb
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Release\netcoreapp2.0\TestProject_220804.csproj.CoreCompileInputs.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Release\netcoreapp2.0\TestProject_220804.AssemblyInfoInputs.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Release\netcoreapp2.0\TestProject_220804.AssemblyInfo.cs
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Release\netcoreapp2.0\TestProject_220804.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Release\netcoreapp2.0\TestProject_220804.pdb
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Release\netcoreapp2.0\TestProject_220804.csprojResolveAssemblyReference.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Release\netcoreapp2.0\ClassLibrary1.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Release\netcoreapp2.0\ClassLibrary1.pdb
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Release\netcoreapp2.0\TestProject_220804.csproj.CopyComplete

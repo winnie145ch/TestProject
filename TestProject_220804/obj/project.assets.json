@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -1709,16 +1720,10 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/2.0.2": {
+      "Microsoft.EntityFrameworkCore.Design/3.0.1": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "2.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        "build": {
+          "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
       "Microsoft.EntityFrameworkCore.InMemory/2.0.2": {
@@ -5028,10 +5033,53 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "ClassLibrary1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "Microsoft.EntityFrameworkCore.Design": "3.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ClassLibrary1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibrary1.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "EntityFramework/6.2.0": {
+      "sha512": "+aB/cnEAr9KqVMjmZwu+Fzy3EOPjCIzNsPAUyn19WbB2u3LFHd2OB3X56ohAj7EBf2hppl9M27nlRnkQxOhoAA==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "files": [
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -6379,17 +6427,19 @@
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/2.0.2": {
-      "sha512": "cEqvei8LTLxJavvOH5OwQRjtfAlJF6RhnUyetv3M7hByXktkpedvhykH0TeJS0IQMfP3pU+9qclQpyrq9Ej4lQ==",
+    "Microsoft.EntityFrameworkCore.Design/3.0.1": {
+      "sha512": "3R4s2WvVnsWv6SBuA6MDZnwI/qlU5qHa4iktAcKq1BVtpSmDS9+66J8ZrCJTQ4//ePQrs9I8zJ67Zjco1JRUQQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/2.0.2",
+      "path": "microsoft.entityframeworkcore.design/3.0.1",
       "files": [
-        "lib/net461/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/net461/Microsoft.EntityFrameworkCore.Design.xml",
-        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.2.0.2.nupkg.sha512",
-        "microsoft.entityframeworkcore.design.nuspec"
+        ".signature.p7s",
+        "build/net461/Microsoft.EntityFrameworkCore.Design.props",
+        "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.3.0.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec",
+        "packageIcon.png"
       ]
     },
     "Microsoft.EntityFrameworkCore.InMemory/2.0.2": {
@@ -13114,10 +13164,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "ClassLibrary1/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibrary1/ClassLibrary1.csproj",
+      "msbuildProject": "../ClassLibrary1/ClassLibrary1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "ClassLibrary1 >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
@@ -13131,11 +13187,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\120999\\source\\repos\\TestProject_220804\\TestProject_220804\\TestProject_220804.csproj",
+      "projectUniqueName": "C:\\Users\\120999\\source\\repo\\TestProject_220804\\TestProject\\TestProject_220804\\TestProject_220804.csproj",
       "projectName": "TestProject_220804",
-      "projectPath": "C:\\Users\\120999\\source\\repos\\TestProject_220804\\TestProject_220804\\TestProject_220804.csproj",
+      "projectPath": "C:\\Users\\120999\\source\\repo\\TestProject_220804\\TestProject\\TestProject_220804\\TestProject_220804.csproj",
       "packagesPath": "C:\\Users\\120999\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\120999\\source\\repos\\TestProject_220804\\TestProject_220804\\obj\\",
+      "outputPath": "C:\\Users\\120999\\source\\repo\\TestProject_220804\\TestProject\\TestProject_220804\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -13155,7 +13211,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\120999\\source\\repo\\TestProject_220804\\TestProject\\ClassLibrary1\\ClassLibrary1.csproj": {
+              "projectPath": "C:\\Users\\120999\\source\\repo\\TestProject_220804\\TestProject\\ClassLibrary1\\ClassLibrary1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -13188,5 +13248,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1' 而非專案目標架構 '.NETCoreApp,Version=v2.0' 還原了套件 'EntityFramework 6.2.0'。此套件與您的專案並非完全相容。",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }
