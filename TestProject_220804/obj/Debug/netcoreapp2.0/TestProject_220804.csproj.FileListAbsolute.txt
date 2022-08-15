@@ -20,3 +20,6 @@ C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\ob
 C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Debug\netcoreapp2.0\TestProject_220804.AssemblyInfo.cs
 C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Debug\netcoreapp2.0\TestProject_220804.dll
 C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Debug\netcoreapp2.0\TestProject_220804.pdb
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\obj\Debug\netcoreapp2.0\TestProject_220804.csproj.CopyComplete
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Debug\netcoreapp2.0\ClassLibrary2.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\TestProject_220804\bin\Debug\netcoreapp2.0\ClassLibrary2.pdb

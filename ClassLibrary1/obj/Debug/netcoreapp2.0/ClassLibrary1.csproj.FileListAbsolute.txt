@@ -1,0 +1,10 @@
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.deps.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.runtimeconfig.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.runtimeconfig.dev.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.pdb
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.AssemblyInfoInputs.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.AssemblyInfo.cs
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.pdb

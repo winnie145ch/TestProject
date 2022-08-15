@@ -1,0 +1,11 @@
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\bin\Debug\netcoreapp2.0\ClassLibrary2.deps.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\bin\Debug\netcoreapp2.0\ClassLibrary2.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\bin\Debug\netcoreapp2.0\ClassLibrary2.pdb
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\obj\Debug\netcoreapp2.0\ClassLibrary2.csprojResolveAssemblyReference.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\obj\Debug\netcoreapp2.0\ClassLibrary2.csproj.CoreCompileInputs.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\obj\Debug\netcoreapp2.0\ClassLibrary2.AssemblyInfoInputs.cache
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\obj\Debug\netcoreapp2.0\ClassLibrary2.AssemblyInfo.cs
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\obj\Debug\netcoreapp2.0\ClassLibrary2.dll
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\obj\Debug\netcoreapp2.0\ClassLibrary2.pdb
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\bin\Debug\netcoreapp2.0\ClassLibrary2.runtimeconfig.json
+C:\Users\120999\source\repo\TestProject_220804\TestProject\ClassLibrary2\bin\Debug\netcoreapp2.0\ClassLibrary2.runtimeconfig.dev.json

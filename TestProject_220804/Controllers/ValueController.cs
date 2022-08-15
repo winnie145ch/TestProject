@@ -77,7 +77,6 @@ namespace TestProject_220804.Controllers
             }
         }
 
-
         //程式範例
         /*[HttpGet("{id}", Name = "Get")]
         public string Get(int id)

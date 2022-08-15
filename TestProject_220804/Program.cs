@@ -23,17 +23,17 @@ namespace TestProject_220804
                 config
                 .AddEnvironmentVariables()
                 .AddJsonFile(
-                    path: "appsettings.json",
+                    path: $"appsettings.json",
                     optional:false,
                     reloadOnChange:true
                     )
                 .AddJsonFile(
-                    path: "appsettings.{hostContext.HostingEnviroment.EnviromentName}.json",
+                    path: $"appsettings.{hostContext.HostingEnvironment.EnvironmentName}.json",
                     optional:true,
                     reloadOnChange:true
                     )
                 .AddJsonFile(
-                    path: "setting.json",
+                    path: $"setting.json",
                     optional: true,
                     reloadOnChange: true
                     );
