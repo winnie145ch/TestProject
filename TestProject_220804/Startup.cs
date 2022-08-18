@@ -32,7 +32,6 @@ namespace TestProject_220804
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            //services.AddHttpClient();
             services.Configure<appsettings>(Configuration);
             services.AddSingleton<ClaimAccessor>();
             services.Configure<setting>(Configuration);
