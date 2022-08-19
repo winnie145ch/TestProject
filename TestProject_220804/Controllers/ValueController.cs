@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using TestProject_220804.Helpers.Filters;
 using TestProject_220804.Services;
 
 namespace TestProject_220804.Controllers
@@ -25,7 +26,7 @@ namespace TestProject_220804.Controllers
             {
                 return Ok(_claim._config.Language);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
@@ -65,7 +66,7 @@ namespace TestProject_220804.Controllers
             try
             {
 #if DEBUG
-        var word = " ; Meow ᓚᘏᗢ";
+                var word = " ; Meow ᓚᘏᗢ";
 #else
         var word = " ; Woff UʘᴥʘU";
 #endif
@@ -76,6 +77,7 @@ namespace TestProject_220804.Controllers
                 throw;
             }
         }
+
 
         //程式範例
         /*[HttpGet("{id}", Name = "Get")]
