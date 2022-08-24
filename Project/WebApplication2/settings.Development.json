@@ -1,0 +1,10 @@
+﻿{
+  "Default": "Trail_dev",
+  "Version": "1.0.0",
+  "Token": "123333",
+  "Plus": "1000",
+  "Absent": {
+    "Offical": 3,
+    "Sick": 2
+  }
+}

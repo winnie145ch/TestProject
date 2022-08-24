@@ -34,9 +34,9 @@ namespace TestProject_220804.Controllers
             {
                 return Ok(new ResponseFormat("test"));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                return Ok(new ResponseFormat(ex));
                 throw;
             }
         }
