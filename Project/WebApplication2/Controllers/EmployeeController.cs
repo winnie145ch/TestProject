@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ClassLibrary1.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication2.Helpers;
 using WebApplication2.Models;
 using WebApplication2.Services;
 
@@ -18,6 +19,7 @@ namespace WebApplication2.Controllers
         {
         }
 
+        public DateTime localtime = DateTime.Now;
         //Insert Emp
         [Route("Create")]
         [HttpPost]
@@ -111,6 +113,38 @@ namespace WebApplication2.Controllers
 
         //Estimate Salary
         //Helper: SalaryHelper
+        [Route("Salary")]
+        [HttpGet]
+        public IActionResult Cal(string id, int time) {
+            try
+            {
+                SalaryHelper salary = new SalaryHelper();
+                var check = _context.Employee.Where(x => x.EmpNo == id);
+                if (check == null)
+                {
+                    return Ok("查無此人");
+                }
+                else {
+                    var search = _context.Employee.Where(x => x.EmpNo == id).Join(_context.Employee,
+                        x => x.EmpNo,
+                        y => y.EmpNo,
+                        (x, y) => new
+                        {
+                            Name = x.EmpName,
+                            Salary = x.Salary,
+                            //照年資計算:year(now datetime - birthday)-25(統一入職年齡)=入職年資
+                            //未來薪資:入職年資 + 預計time年 = (para)years => 直接加上去當加薪
+                            Future = salary.CalcuSalary(x.Sex, x.DeptNo, (localtime - Convert.ToDateTime($"{x.Brithday.Substring(0, 4) }+,+{x.Brithday.Substring(4, 2)} +,+ {x.Brithday.Substring(6, 2)}")).Days / 365 + time, x.Salary, Int32.Parse(_claim._config.Plus))
+                        }).FirstOrDefault();
+                        return Ok(search);
+                }
+            }
+            catch (Exception ex)
+            {
+                return Ok(new Response(ex));
+                throw;
+            }
+        }
 
         public class Input {
             public string id { get; set; }
