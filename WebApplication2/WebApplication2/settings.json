@@ -1,0 +1,14 @@
+﻿{
+  "Default": "Trail_01",
+
+  "ConnectionStrings": {
+    "DB120999": "Data Source=10.11.37.148;Initial Catalog=TrainDB120999;Persist Security Info=True;User ID=120999;Password=120999;"
+  },
+  "Version": "1.0",
+  "Token": "123456",
+  "Plus": "1500",
+  "Absent": {
+    "Offical": 3,
+    "Sick": 1
+  } 
+}

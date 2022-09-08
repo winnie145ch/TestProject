@@ -1,0 +1,11 @@
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.deps.json
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.dll
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.csprojResolveAssemblyReference.cache
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.AssemblyInfoInputs.cache
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.AssemblyInfo.cs
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.runtimeconfig.json
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.runtimeconfig.dev.json
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\bin\Debug\netcoreapp2.0\ClassLibrary1.pdb
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.dll
+c:\users\120999\source\repos\WebApplication2\ClassLibrary1\obj\Debug\netcoreapp2.0\ClassLibrary1.pdb
